@@ -430,6 +430,25 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <h2 class="form_title">Zostaw swoje dane w formularzu poniżej</h2>
+        <section class="form">
+          <form name="signup_form" autocomplete="on" novalidate>
+            <label class="label">
+              Imię
+              <input type="text" name="Imię" />
+            </label>
+
+            <label class="label">
+              Telefon
+              <input type="tel" name="Numer telefonu" placeholder="" />
+            </label>
+            <label class="label"
+              >Email <input type="email" name="Email"
+            /></label>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
         <svg class="close-btn" data-modal-close>
           <use href="./images/icons.svg#icon-close"></use>
         </svg>

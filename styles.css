@@ -521,6 +521,8 @@ body {
   padding-bottom: 16px;
   display: flex;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fidgets:hover,
 .fidgets:focus {
@@ -538,7 +540,7 @@ body {
   --color5: #2196f3;
   --color2: #2196f3;
 }
-.fidgets:hover svg {
+.fidgets:hover .icon {
   --color5: #2196f3;
   --color2: #2196f3;
 }
@@ -792,4 +794,32 @@ body {
   border-radius: 2px;
   bottom: -33px;
   left: 0px;
+}
+input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.form {
+  width: 448px;
+  margin-left: 40px;
+}
+.form_title {
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.label {
+}
+input {
+  margin-top: 4px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #757575;
 }
