@@ -69,6 +69,8 @@ body {
   letter-spacing: 0.02em;
   text-align: left;
   color: inherit;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mainnav:hover {
   color: #2196f3;
@@ -96,6 +98,8 @@ body {
   text-align: left;
   font-style: normal;
   margin-right: 50px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: #757575;
 }
@@ -110,6 +114,8 @@ body {
   color: #ffffff;
   font-style: normal;
   padding-bottom: 9px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .number:hover {
   color: #2196f3;
@@ -179,6 +185,8 @@ body {
   font-style: normal;
   line-height: 1.5;
   font-size: 14px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail2 {
   color: #ffffff;
@@ -187,6 +195,8 @@ body {
   font-style: normal;
   line-height: 1.5;
   font-size: 14px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .number2:hover {
   color: #2196f3;
@@ -278,6 +288,8 @@ body {
   text-align: center;
   cursor: pointer;
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -521,6 +533,8 @@ body {
   padding-bottom: 16px;
   display: flex;
   cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .fidgets:hover,
 .fidgets:focus {
@@ -531,22 +545,26 @@ body {
   height: 60px;
   display: block;
   margin: 0 auto;
-  --color2: #afb1b8;
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon:hover,
 .icon:focus {
-  --color5: #2196f3;
-  --color2: #2196f3;
+  fill: #2196f3;
 }
 .fidgets:hover svg {
-  --color5: #2196f3;
-  --color2: #2196f3;
+  fill: #2196f3;
 }
 .disflex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   justify-items: center;
+}
+svg {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navicon {
   width: 16px;
@@ -559,7 +577,10 @@ body {
   margin-right: 10px;
 }
 .disflex:hover svg {
-  --color3: #2196f3;
+  fill: #2196f3;
+}
+.disflex:focus svg {
+  fill: #2196f3;
 }
 .join {
   font-family: "Roboto";
@@ -586,9 +607,47 @@ body {
   margin-right: 78px;
 }
 .iconbot {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  fill: white;
+}
+.circle {
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circlesec {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff1a;
+  position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.circle:hover {
+  background-color: #2196f3;
   cursor: pointer;
+}
+.circle:hover svg {
+  fill: white;
+}
+.circlesec:hover {
+  background-color: #2196f3;
+  cursor: pointer;
+}
+.circlesec:hover svg {
+  fill: white;
 }
 .iconsbot {
   padding-left: 0px;
@@ -596,15 +655,18 @@ body {
   justify-content: space-between;
   align-items: center;
   justify-items: center;
-  --color2: #ffffff1a;
 }
 .iconbot:hover {
-  --color2: #2196f3;
+  fill: white;
 }
 .icontop {
-  width: 44px;
-  height: 44px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  fill: #afb1b8;
 }
 .iconstop {
   padding-left: 0px;
@@ -615,8 +677,7 @@ body {
   padding-bottom: 30px;
 }
 .icontop:hover {
-  --color4: #2196f3;
-  --color5: white;
+  fill: white;
 }
 .socialmedia {
   width: 206px;
@@ -810,4 +871,8 @@ body {
   z-index: 1;
   width: 370px;
   text-align: center;
+}
+.anim {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
