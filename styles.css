@@ -977,3 +977,77 @@ textarea::placeholder {
   letter-spacing: 0.01em;
   text-align: left;
 }
+.check {
+  height: 8px;
+  width: 11px;
+  fill: white;
+  position: absolute;
+  top: 1.5px;
+}
+.rectangle {
+  position: absolute;
+  background: white;
+  border: 2px solid black;
+  border-radius: 2px;
+  height: 15px;
+  width: 16px;
+  top: 4.5px;
+  left: 15px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.fieldsetsec {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  padding: 0;
+  width: 419px;
+  height: 24px;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 30px;
+  margin-left: 0;
+}
+
+.checkbox {
+  position: absolute;
+  background: white;
+  border: 2px solid black;
+  border-radius: 2px;
+  height: 15px;
+  width: 16px;
+  top: 4.5px;
+  z-index: 2;
+  opacity: 0;
+}
+.fieldsetsec .checkbox {
+  width: 16px;
+  margin: 0;
+  left: 15px;
+}
+.policy {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+  margin-left: 40px;
+  width: 397px;
+}
+.policysec {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #2196f3;
+  text-decoration: underline;
+}
+.fieldsetsec:has(.checkbox:checked) .rectangle {
+  background-color: #2196f3;
+}
