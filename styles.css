@@ -876,3 +876,6 @@ svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.close {
+  border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 50%;
+}
