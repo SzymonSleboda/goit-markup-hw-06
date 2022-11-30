@@ -433,11 +433,43 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="circlethrd">
-          <svg class="close-btn" data-modal-close>
-            <use href="./images/close.svg#icon-close-2-11"></use>
-          </svg>
+        <div class="formcont">
+          <h2 class="formtitle">Zostaw swoje dane w formularzu poniżej</h2>
+          <form class="my_form" name="signup_form" autocomplete="on" novalidate>
+            <fieldset class="fieldset">
+              <label for="Name"> Imię </label>
+              <svg class="modalicon">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+              <input type="text" id="Name" />
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <label for="Telefon"> Telefon </label>
+              <svg class="modalicon">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+              <input type="tel" id="Telefon" />
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <label for="Email"> Imię </label>
+              <svg class="modalicon">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+              <input type="email" id="Email" />
+            </fieldset>
+            <div class="comment">Komentarz</div>
+            <textarea placeholder="Wprowadź tekst"></textarea>
+
+            <button type="submit" class="button-order-service margtop">
+              Wyślij
+            </button>
+          </form>
         </div>
+        <svg class="close-btn" data-modal-close>
+          <use href="./images/icons.svg#icon-close-2-11"></use>
+        </svg>
       </div>
     </div>
     <script src="./js/modal.js"></script>
