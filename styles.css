@@ -755,11 +755,9 @@ svg {
 }
 .close-btn {
   position: absolute;
-  top: 8px;
-  width: 30px;
-  height: 30px;
+  width: 11px;
+  height: 11px;
   background-color: #ffffff;
-  right: 8px;
   cursor: pointer;
 }
 .backdrop {
@@ -1131,5 +1129,19 @@ textarea::placeholder {
   display: flex;
   width: 130;
   height: 30px;
+  justify-content: center;
+}
+.close_background {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px #0000001a;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
