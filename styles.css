@@ -938,10 +938,10 @@ svg {
 .my_form input:focus {
   outline: 0;
 }
-.fieldset:has(input:focus) {
+.fieldset:focus-within {
   border-color: #2196f3;
 }
-.fieldset:has(input:focus) svg {
+.fieldset:focus-within svg {
   border-color: #2196f3;
   fill: #2196f3;
 }
@@ -985,8 +985,6 @@ textarea::placeholder {
   height: 8px;
   width: 11px;
   fill: white;
-  position: absolute;
-  top: 1.5px;
 }
 .rectangle {
   position: absolute;
@@ -999,6 +997,9 @@ textarea::placeholder {
   left: 15px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .fieldsetsec {
   display: flex;
@@ -1052,8 +1053,9 @@ textarea::placeholder {
   color: #2196f3;
   text-decoration: underline;
 }
-.fieldsetsec:has(.checkbox:checked) .rectangle {
+.checkbox:checked + .rectangle {
   background-color: #2196f3;
+  border: none;
 }
 .newsletter_container {
   height: 86px;
