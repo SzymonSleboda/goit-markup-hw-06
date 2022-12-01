@@ -871,6 +871,7 @@ svg {
   z-index: 1;
   width: 370px;
   text-align: center;
+  cursor: pointer;
 }
 .anim {
   transition-duration: 250ms;
